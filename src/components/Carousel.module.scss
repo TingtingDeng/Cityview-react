@@ -1,0 +1,56 @@
+.Carousel {
+  //width: 80%;
+  height: 120px;
+  border-radius: 10px;
+  //overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all ease-in-out 0.3s;
+  }
+
+  .Gallery {
+    //z-index: 1;
+    position: relative;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+
+  }
+
+  .Icon {
+    position: absolute;
+    //left: -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateY(-1px);
+
+    .Icon-prev, .Icon-next {
+      z-index: 1;
+      background-color: rgba(81, 81, 81, 0.4);
+      color: rgba(134, 134, 139, 0.9);
+      font-weight: 400;
+      outline: 2px solid red;
+      border: 2px solid red;
+      transition: all ease 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(210, 210, 215, 0.7);
+        transition: all ease 0.3s;
+
+      }
+    }
+
+  }
+}

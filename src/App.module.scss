@@ -1,0 +1,32 @@
+.AppContainer {
+  width: 100vw;
+  height: 100vh;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*transition: all ease-in-out 0.3s;*/
+}
+.Outer {
+  max-width: 1460px;
+  min-height: 600px;
+  padding-top: 100px;
+  justify-self: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@keyframes container-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
